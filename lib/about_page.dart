@@ -225,7 +225,7 @@ class _AboutPageState extends State<AboutPage> {
                                       style: Theme.of(context).textTheme.titleLarge,
                                     ),
                                     Text(
-                                      'https://github.com/j7126/who_goes_first',
+                                      'https://github.com/dentankyan/who_goes_first_ru',
                                       style: Theme.of(context).textTheme.titleSmall,
                                     ),
                                   ],
