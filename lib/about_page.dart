@@ -159,46 +159,6 @@ class _AboutPageState extends State<AboutPage> {
                   ),
                 ),
                 GestureDetector(
-                  onTap: () => launchUrl(Uri.parse('https://github.com/j7126/who_goes_first/issues')),
-                  child: Card(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
-                      child: Row(
-                        children: [
-                          const Opacity(
-                            opacity: 0.5,
-                            child: Icon(
-                              Icons.bug_report,
-                              size: 32,
-                            ),
-                          ),
-                          Expanded(
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                              child: Opacity(
-                                opacity: 0.9,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Сообщить об ошибке',
-                                      style: Theme.of(context).textTheme.titleLarge,
-                                    ),
-                                    Text(
-                                      'https://github.com/j7126/who_goes_first/issues',
-                                      style: Theme.of(context).textTheme.titleSmall,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                GestureDetector(
                   onTap: () => launchUrl(Uri.parse('https://github.com/j7126/who_goes_first')),
                   child: Card(
                     child: Padding(
@@ -221,7 +181,7 @@ class _AboutPageState extends State<AboutPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Открыть на GitHub',
+                                      'Исходный код на GitHub',
                                       style: Theme.of(context).textTheme.titleLarge,
                                     ),
                                     Text(
