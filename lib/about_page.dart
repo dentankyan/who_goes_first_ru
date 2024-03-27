@@ -30,7 +30,7 @@ class _AboutPageState extends State<AboutPage> {
       appBar: AppBar(
         scrolledUnderElevation: 4,
         shadowColor: Theme.of(context).colorScheme.shadow,
-        title: const Text("About"),
+        title: const Text("О приложении"),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -65,11 +65,11 @@ class _AboutPageState extends State<AboutPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Who Goes First',
+                                    'Кто ходит первым?',
                                     style: Theme.of(context).textTheme.titleLarge,
                                   ),
                                   Text(
-                                    '© 2024 Jefferey Neuffer',
+                                    '© 2024 Jefferey Neuffer, перевёл Denis Kiselev',
                                     style: Theme.of(context).textTheme.titleSmall,
                                   ),
                                 ],
@@ -102,7 +102,7 @@ class _AboutPageState extends State<AboutPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'App Version',
+                                    'Версия приложения',
                                     style: Theme.of(context).textTheme.titleLarge,
                                   ),
                                   Text(
@@ -141,7 +141,7 @@ class _AboutPageState extends State<AboutPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Home Page',
+                                      'Домашняя страница',
                                       style: Theme.of(context).textTheme.titleLarge,
                                     ),
                                     Text(
@@ -181,7 +181,7 @@ class _AboutPageState extends State<AboutPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Report an issue',
+                                      'Сообщить об ошибке',
                                       style: Theme.of(context).textTheme.titleLarge,
                                     ),
                                     Text(
@@ -221,7 +221,7 @@ class _AboutPageState extends State<AboutPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'View on GitHub',
+                                      'Открыть на GitHub',
                                       style: Theme.of(context).textTheme.titleLarge,
                                     ),
                                     Text(
@@ -262,7 +262,7 @@ class _AboutPageState extends State<AboutPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Credits',
+                                      'Разработчики',
                                       style: Theme.of(context).textTheme.titleLarge,
                                     ),
                                     Text(
@@ -303,7 +303,7 @@ class _AboutPageState extends State<AboutPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'License',
+                                      'Лицензия',
                                       style: Theme.of(context).textTheme.titleLarge,
                                     ),
                                     Text(
@@ -325,7 +325,7 @@ class _AboutPageState extends State<AboutPage> {
                   child: Opacity(
                     opacity: 0.3,
                     child: Text(
-                      "Who Goes First Copyright (C) 2024 Jefferey Neuffer.\nThis program is free software, licensed under GNU AGPL v3 or any later version.",
+                      "Who Goes First Copyright (C) 2024 Jefferey Neuffer, translated by Denis Kiselev \nThis program is free software, licensed under GNU AGPL v3 or any later version.",
                       style: TextStyle(
                         fontSize: 12.0,
                       ),

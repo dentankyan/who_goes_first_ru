@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Who Goes First?',
+      title: 'Кто ходит первым?',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.green,
@@ -46,12 +46,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Who Goes First?"),
+        title: const Text("Кто ходит первым?"),
         actions: <Widget>[
           PopupMenuButton(
             itemBuilder: (BuildContext context) => <PopupMenuEntry>[
               PopupMenuItem(
-                child: const Text('About'),
+                child: const Text('О приложении'),
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
@@ -74,12 +74,12 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      'Random funny "who goes first" rules from popular tabletop games!',
+                      'Случайные правила для выбора первого игрока из популярных настольных игр!',
                       style: Theme.of(context).textTheme.bodyLarge,
                       textAlign: TextAlign.center,
                     ),
                     Text(
-                      'Press "Randomise" to get started!',
+                      'Нажмите кнопку "Случайное правило", чтобы начать!',
                       style: Theme.of(context).textTheme.bodyLarge,
                       textAlign: TextAlign.center,
                     ),
@@ -93,8 +93,9 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      'Random "who goes first" rule:',
+                      'Случайное правило для выбора первого игрока:',
                       style: Theme.of(context).textTheme.bodyLarge,
+                      textAlign: TextAlign.center
                     ),
                     Text(
                       rule?.rule ?? "",
@@ -104,8 +105,9 @@ class _HomePageState extends State<HomePage> {
                     Padding(
                       padding: const EdgeInsets.only(top: 16.0, bottom: 8.0),
                       child: Text(
-                        'Appears in these games:',
+                        'Появляется в следующих настольных играх:',
                         style: Theme.of(context).textTheme.bodyLarge,
+                        textAlign: TextAlign.center,
                       ),
                     ),
                     for (var game in rule?.games ?? [])
@@ -131,7 +133,7 @@ class _HomePageState extends State<HomePage> {
             rule = Rules.random();
           });
         },
-        label: const Text('Randomise'),
+        label: const Text('Случайное правило'),
         icon: const Icon(Icons.shuffle_outlined),
       ),
     );
